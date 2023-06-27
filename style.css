@@ -1,3 +1,42 @@
 body{
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
+    font-weight:700;
 }
+.wrapper{
+    width: 1176px;
+    margin: 0 auto;
+ }
+.header{
+    padding-top: 24px;
+}
+/* стилі навігаціі */
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+.header-nav-list{
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
+    margin-right: 344px;
+    color: #212121;
+}
+.header-nav-list:hover{
+    color: #2196F3;
+}
+.header-nav-button{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: #757575;
+}
+.info:hover{
+    color: #2196F3;
+}
+.nomber:hover{
+    color: #2196F3;
+}
+
