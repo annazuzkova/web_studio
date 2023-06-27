@@ -3,7 +3,7 @@ body{
     font-weight:700;
 }
 .wrapper{
-    width: 1176px;
+    width: 1600px;
     margin: 0 auto;
  }
 .header{
@@ -16,6 +16,7 @@ body{
     align-items: center;
     font-weight: 500;
     font-size: 14px;
+    margin-bottom: 25px;
 }
 .header-nav-list{
     display: flex;
@@ -36,7 +37,44 @@ body{
 .info:hover{
     color: #2196F3;
 }
+
 .nomber:hover{
     color: #2196F3;
 }
-
+.header-logotup{
+    margin-left: 215px;
+}
+.nomber{
+    margin-right: 215px;
+}
+/* большая чорная штука */
+.header-main{
+    width: 1600px;
+    height: 600px;
+    background: #2F303A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-main-title{
+    width: 696px;
+    color: #FFF;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    margin-top: 200px;
+}
+.header-main-btn{
+    width: 216px;
+    height: 50px;
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 30px;
+}
