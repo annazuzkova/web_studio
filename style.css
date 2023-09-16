@@ -3,26 +3,28 @@ body{
     font-weight:700;
 }
 .wrapper{
-    width: 1600px;
     margin: 0 auto;
  }
-.header{
-    padding-top: 24px;
-}
 /* стилі навігаціі */
+.header{
+   
+}
 .header-nav{
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 24px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
     font-size: 14px;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
 .header-nav-list{
     display: flex;
     gap: 50px;
-    margin-left: 93px;
-    margin-right: 344px;
+    /* margin-left: 93px;
+    margin-right: 344px; */
     color: #212121;
 }
 .header-nav-list li:hover{
@@ -41,20 +43,22 @@ body{
 .nomber:hover{
     color: #2196F3;
 }
-.header-logotup{
+/* .header-logotup{
     margin-left: 215px;
 }
 .nomber{
     margin-right: 215px;
-}
+} */
 /* большая чорная штука */
-.header-main{
-    width: 1600px;
-    height: 600px;
-    background: #2F303A;
+.header-main-container{
+    max-width: 696px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.header-main{
+    padding: 200px 452px 280px 452px;
+    background: #2F303A;
 }
 .header-main-title{
     width: 696px;
@@ -63,7 +67,6 @@ body{
     font-size: 44px;
     font-weight: 900;
     line-height: 60px;
-    margin-top: 200px;
 }
 .header-main-btn{
     width: 216px;
@@ -79,13 +82,15 @@ body{
     margin-top: 30px;
 }
 /* main */
-.main{
-    display: flex;
-}
 .container{
-    height: 766px;
+    /* height: 766px; */
     background-color: #FFF;
-    margin: 94px 215px;
+    max-width: 1600px;
+    padding: 94px 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 94px 215px; */
 }
 .main-section-1{
     display: flex;
@@ -124,4 +129,77 @@ body{
     color: #212121;
     font-size: 36px;
     font-weight: 700;
+}
+/* our-company */
+.our-company-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.our-company{
+    background:  #F5F4FA; 
+    padding: 94px 0;
+}
+.our-company-team{
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.people-img{
+    width: 270px;
+    height: 260px;
+}
+.our-team{
+    display: flex;
+    gap: 30px;
+}
+.people-card{
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.people-title{
+    color: #212121;
+    font-size: 16px;
+    font-weight: 500;
+}
+.people-job{
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+}
+.people{
+    display: flex;
+    padding: 30px 0;
+    flex-direction: column;
+    align-items: center;
+}
+/* footer */
+.footer{
+    background: #2F303A;
+    padding: 60px 0;
+    padding-left: 215px;
+}
+.adress{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+.info-footer{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer-list{
+   display: flex; 
+   flex-direction: column;
+   gap: 9px;
+}
+.footer-logo{
+    margin-bottom: 20px;
+}
+.footer-container{
+    max-width: 231px;
 }
