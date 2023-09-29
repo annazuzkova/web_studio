@@ -86,17 +86,18 @@ body{
     /* height: 766px; */
     background-color: #FFF;
     max-width: 1600px;
-    padding: 94px 215px;
+    /* padding: 94px 215px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     /* margin: 94px 215px; */
 }
-.main-section-1{
+.section-1-container{
     display: flex;
     flex-direction: row;
     gap: 30px;
-    height: 98px;
+    padding: 94px 0;
+    margin-bottom: 94px;
 }
 .section-1-card{
     width: 270px;
@@ -112,11 +113,32 @@ body{
     color: #757575;
     line-height: 24px;
 }
+.main-section-1{
+    max-width: 1600px;
+}
 .main-section-2{
     margin-top: 94px;
     display: flex;
     flex-direction: column;
     height: 386px;
+    margin-bottom: 94px;
+}
+.box-svg{
+    border-radius: 4px;
+    background: #F5F4FA;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
+.advantages-photo{
+    /* padding: 25px 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .box{
     display: flex;
@@ -129,6 +151,26 @@ body{
     color: #212121;
     font-size: 36px;
     font-weight: 700;
+}
+.photo2-container{
+    position: relative;
+}
+.photo2-title{
+    position: absolute;
+    left: 0;
+    width: 370px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(47, 48, 58, 0.80);
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 }
 /* our-company */
 .our-company-container{
