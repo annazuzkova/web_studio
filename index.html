@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,6 +32,46 @@
                 Ефективні рішення для вашого бізнесу
             </h1>
             <a href="#"><button class="header-main-btn">Замовити послугу</button></a>  
+            <div class="backdrop is-hidden" data-backdrop>
+                <div class="modal" data-modal>
+                    <div class="btn-close-container">
+                       <button class="button-close" data-modal-close><img src="/img/close-black-18dp (2) 1.svg" alt="x"></button>  
+                    </div>
+                    <div class="modal-container">
+                    <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
+                    <form action="#"  class="form">
+                            <div class="form-box">
+                            <label class="form-label" for="name" class="form_label">Імя</label>
+                            <div class="form-container">
+                                <img src="/img/person-black-18dp 1.svg" alt="x" class="img-form">
+                                <input class="form-input" type="text" name="user_name" id="name">
+                            </div>
+                            </div>
+                        <div class="form-box">
+                             <label class="form-label" for="phone" class="form_label">Телефон</label>
+                            <div class="form-container">
+                                <img src="/img/phone-black-18dp 1.svg" alt="x" class="img-form">
+                                <input class="form-input" type="tel" name="user_phone" id="phone">
+                            </div> 
+                        </div>
+                        <div class="form-box">
+                           <label class="form-label" for="imail" class="form_label">Почта</label>
+                            <div class="form-container">
+                                <img src="/img/email-black-18dp 1.svg" alt="x" class="img-form">
+                                <input class="form-input" type="email" name="user_imail" id="imail">
+                            </div>
+                        </div>
+                        <div class="form-box box-textarea">
+                            <label class="form-label" for="comment" class="form_label">Коментар</label>
+                            <textarea class="form-textarea" placeholder="Введіть текст" name="user_comment" id="comment" cols="30" rows="7"></textarea>
+                        </div>
+                        <label class="form_label form-check"><input type="checkbox" name="user_check"><span class="input-check">Погоджуюся з розсилкою та приймаю </span><a class="link-check">Умови договору</a></label>
+                      </form>
+                      <button class="btn-form" type="submit">Відправити</button> 
+                    </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </header>
