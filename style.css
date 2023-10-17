@@ -510,6 +510,14 @@ body {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.no-scroll {
+  overflow: hidden;
 }
 .form {
   display: flex;
@@ -578,6 +586,9 @@ body {
   width: 18px;
   height: 18px;
 }
+.form-container:hover .img-fill{
+  fill: #2196f3;
+}
 .form-input {
   border: none;
   width: 100%;
@@ -621,4 +632,7 @@ body {
 }
 .form-textarea:hover {
   border: #1a75e8 solid 1px;
+}
+.button-close:hover .img-fill{
+  fill: #2196f3;
 }
