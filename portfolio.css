@@ -25,6 +25,7 @@ body {
 }
 .header-nav-list li:hover {
   color: #1a75e8;
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-button {
   display: flex;
@@ -34,9 +35,11 @@ body {
 }
 .info:hover {
   color: #2196f3;
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nomber:hover {
   color: #2196f3;
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Main */
 .main-container{
@@ -72,6 +75,7 @@ body {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-portolio-container{
   display: flex;
@@ -126,9 +130,11 @@ body {
 }
 .portfolio-card:hover{
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-card:hover .overlay-text{
   transform: translateY(0);
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* FOOTER */
 .footer {
