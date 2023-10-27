@@ -265,8 +265,9 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.167);
   opacity: 1;
+  transition: opasity 0.5s linear;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -289,7 +290,13 @@ body {
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  max-width: 528px;
+  max-height: 581px;
+  transform: translate(-50%, -50%) scale(0); 
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal.effect{
+  transform: translate(-50%, -50%) scale(1);
 }
 .modal-container {
   display: flex;
