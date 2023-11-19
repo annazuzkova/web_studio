@@ -1,0 +1,159 @@
+.main-container {
+    background-color: $backgraundcolor;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card{
+       width: 270px;
+    height: 98px;
+    font-size: 14px;
+    &__title{
+        font-weight: 700;
+    color: $colorTitlesNav;
+    margin-bottom: 10px; 
+    }
+    &__text{
+       color: $colorText;
+    line-height: 24px; 
+    }
+  }
+  .section-1 {
+    max-width: 1600px;
+    &__container{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        padding: 94px 0;
+        margin-bottom: 94px;
+    }
+  }
+  .box-svg {
+    border-radius: 4px;
+    background: $bakcgraundOurPeople;
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+  }
+  .advantages-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill:$colorTitlesNav;
+  }
+  .advantages-photo:hover{
+    fill: $colorTextLinkHover;
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+
+
+  
+  .section-2 {   
+    display: flex;
+    flex-direction: column;
+    height: 386px;
+    &__title{
+        margin-bottom: 50px;
+        text-align: center;
+        color: $colorTitlesNav;
+        font-size: 36px;
+        font-weight: 700;
+    }
+    &__container{
+      display: flex;
+    flex-direction: row;
+    gap: 30px;
+    }
+  }
+  .main-container__section-2{
+    margin-bottom: 94px;
+    margin-top: 94px;
+  }
+  .photo2 {
+    position: relative;
+    &__title{
+      position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  padding: 27px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(47, 48, 58, 0.8);
+  color: $advantagesHeaderTitle;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  z-index: 1;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* our-company */
+  .our-company {
+    background: $bakcgraundOurPeople;
+    padding: 94px 0;
+    &__container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+    &__team{
+       color: $colorTitlesNav;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    }
+    &__our-team{
+      display: flex;
+    gap: 30px;
+    }
+  }
+  .people-card {
+    border-radius: 0px 0px 4px 4px;
+    background: $bakcgraundOurPeopleCard;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+      &__img{
+        width: 270px;
+    height: 260px;
+      }
+  }
+  .people {
+    display: flex;
+    padding: 30px 0;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+       color:$colorTitlesNav;
+    font-size: 16px;
+    font-weight: 500;
+    }
+    &__job{
+      color: $colorText;
+    font-size: 16px;
+    font-weight: 400;
+    }
+  }

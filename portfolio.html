@@ -4,50 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="portfolio.css" />
+    <!-- <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="portfolio.css" /> -->
+    <link rel="stylesheet" href="/src/css/portfolio.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="header-nav">
-        <div class="header-logotup">
+      <nav class="header__nav nav">
+        <div class="nav__logotup">
           <a href="#"><img src="/img/WebStudio.png" alt="WebStudio" /></a>
         </div>
-        <ul class="header-nav-list">
-          <li><a href="/index.html">Студія</a></li>
-          <li><a href="#">Портфоліо</a></li>
+        <ul class="nav__list">
+          <li><a href="index.html">Студія</a></li>
+          <li><a href="portfolio.html">Портфоліо</a></li>
           <li><a href="#">Контакти</a></li>
         </ul>
-        <div class="header-nav-button">
-          <a class="info" href="#">info@devstudio.com</a>
-          <a class="nomber" href="#">+38 096 111 11 11</a>
+        <div class="nav__button">
+          <a class="nav__info" href="#">info@devstudio.com</a>
+          <a class="nav__nomber" href="#">+38 096 111 11 11</a>
         </div>
       </nav>
     </header>
     <main class="main">
-      <div class="main-container">
+      <div class="main__container">
         <div class="btn-container">
-          <button class="button-portfolio">Усі</button>
-          <button class="button-portfolio">Веб-сайти</button>
-          <button class="button-portfolio">Додатки</button>
-          <button class="button-portfolio">Дизайн</button>
-          <button class="button-portfolio">Маркетинг</button>
+          <button class="btn-container__button">Усі</button>
+          <button class="btn-container__button">Веб-сайти</button>
+          <button class="btn-container__button">Додатки</button>
+          <button class="btn-container__button">Дизайн</button>
+          <button class="btn-container__button">Маркетинг</button>
         </div>
-        <div class="card-portolio-container">
+        <div class="main__card-container">
           <div class="portfolio-card">
-            <div class="visible">
+            <div class="portfolio-card__visible">
               <img
                 src="/img/portfolio-card-1.png"
                 alt="portfolio"
                 class="portfolio-img"
               />
-              <div class="portfolio-titles">
-                <h4 class="portfolio-card-title">Технокряк</h4>
-                <span class="portfolio-span">Веб-сайт</span>
+              <div class="portfolio-card__titles">
+                <h4 class="portfolio-card__title">Технокряк</h4>
+                <span class="portfolio-card__span">Веб-сайт</span>
               </div>
             </div>
-            <div class="overlay-text">
-              <p class="portfolio-text">
+            <div class="portfolio-card__overlay">
+              <p class="portfolio-card__text">
                 Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.
@@ -55,21 +56,21 @@
             </div>
           </div>
           <div class="portfolio-card">
-            <div class="visible">
+            <div class="portfolio-card__visible">
               <img
                 src="/img/portfolio-card-2.png"
                 alt="portfolio"
                 class="portfolio-img"
               />
-              <div class="portfolio-titles">
-                <h4 class="portfolio-card-title">
+              <div class="portfolio-card__titles">
+                <h4 class="portfolio-card__title">
                   Постер New Orlean vs Golden Star
                 </h4>
-                <span class="portfolio-span">Дизайн</span>
+                <span class="portfolio-card__span">Дизайн</span>
               </div>
             </div>
-            <div class="overlay-text">
-              <p class="portfolio-text">
+            <div class="portfolio-card__overlay">
+              <p class="portfolio-card__text">
                 Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.
@@ -77,19 +78,19 @@
             </div>
           </div>
           <div class="portfolio-card">
-            <div class="visible">
+            <div class="portfolio-card__visible">
               <img
                 src="/img/portfolio-card-3.png"
                 alt="portfolio"
                 class="portfolio-img"
               />
-              <div class="portfolio-titles">
-                <h4 class="portfolio-card-title">Ресторан Seafood</h4>
-                <span class="portfolio-span">Додаток</span>
+              <div class="portfolio-card__titles">
+                <h4 class="portfolio-card__title">Ресторан Seafood</h4>
+                <span class="portfolio-card__span">Додаток</span>
               </div>
             </div>
-            <div class="overlay-text">
-              <p class="portfolio-text">
+            <div class="portfolio-card__overlay">
+              <p class="portfolio-card__text">
                 Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.
@@ -97,19 +98,19 @@
             </div>
           </div>
           <div class="portfolio-card">
-            <div class="visible">
+            <div class="portfolio-card__visible">
               <img
                 src="/img/portfolio-card-4.png"
                 alt="portfolio"
                 class="portfolio-img"
               />
-              <div class="portfolio-titles">
-                <h4 class="portfolio-card-title">Проєкт Prime</h4>
-                <span class="portfolio-span">Маркетинг</span>
+              <div class="portfolio-card__titles">
+                <h4 class="portfolio-card__title">Проєкт Prime</h4>
+                <span class="portfolio-card__span">Маркетинг</span>
               </div>
             </div>
-            <div class="overlay-text">
-              <p class="portfolio-text">
+            <div class="portfolio-card__overlay">
+              <p class="portfolio-card__text">
                 Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.
@@ -117,19 +118,19 @@
             </div>
           </div>
           <div class="portfolio-card">
-            <div class="visible">
+            <div class="portfolio-card__visible">
               <img
                 src="/img/portfolio-card-5.png"
                 alt="portfolio"
                 class="portfolio-img"
               />
-              <div class="portfolio-titles">
-                <h4 class="portfolio-card-title">Проєкт Boxes</h4>
-                <span class="portfolio-span">Додаток</span>
+              <div class="portfolio-card__titles">
+                <h4 class="portfolio-card__title">Проєкт Boxes</h4>
+                <span class="portfolio-card__span">Додаток</span>
               </div>
             </div>
-            <div class="overlay-text">
-              <p class="portfolio-text">
+            <div class="portfolio-card__overlay">
+              <p class="portfolio-card__text">
                 Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.
@@ -137,19 +138,21 @@
             </div>
           </div>
           <div class="portfolio-card">
-            <div class="visible">
+            <div class="portfolio-card__visible">
               <img
                 src="/img/portfolio-card-6.png"
                 alt="portfolio"
                 class="portfolio-img"
               />
-              <div class="portfolio-titles">
-                <h4 class="portfolio-card-title">Inspiration has no Borders</h4>
-                <span class="portfolio-span">Веб-сайт</span>
+              <div class="portfolio-card__titles">
+                <h4 class="portfolio-card__title">
+                  Inspiration has no Borders
+                </h4>
+                <span class="portfolio-card__span">Веб-сайт</span>
               </div>
             </div>
-            <div class="overlay-text">
-              <p class="portfolio-text">
+            <div class="portfolio-card__overlay">
+              <p class="portfolio-card__text">
                 Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.
@@ -157,19 +160,19 @@
             </div>
           </div>
           <div class="portfolio-card">
-            <div class="visible">
+            <div class="portfolio-card__visible">
               <img
                 src="/img/portfolio-card-7.png"
                 alt="portfolio"
                 class="portfolio-img"
               />
-              <div class="portfolio-titles">
-                <h4 class="portfolio-card-title">Видання Limited Edition</h4>
-                <span class="portfolio-span">Дизайн</span>
+              <div class="portfolio-card__titles">
+                <h4 class="portfolio-card__title">Видання Limited Edition</h4>
+                <span class="portfolio-card__span">Дизайн</span>
               </div>
             </div>
-            <div class="overlay-text">
-              <p class="portfolio-text">
+            <div class="portfolio-card__overlay">
+              <p class="portfolio-card__text">
                 Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.
@@ -177,19 +180,19 @@
             </div>
           </div>
           <div class="portfolio-card">
-            <div class="visible">
+            <div class="portfolio-card__visible">
               <img
                 src="/img/portfolio-card-8.png"
                 alt="portfolio"
                 class="portfolio-img"
               />
-              <div class="portfolio-titles">
-                <h4 class="portfolio-card-title">Проєкт LAB</h4>
-                <span class="portfolio-span">Маркетинг</span>
+              <div class="portfolio-card__titles">
+                <h4 class="portfolio-card__title">Проєкт LAB</h4>
+                <span class="portfolio-card__span">Маркетинг</span>
               </div>
             </div>
-            <div class="overlay-text">
-              <p class="portfolio-text">
+            <div class="portfolio-card__overlay">
+              <p class="portfolio-card__text">
                 Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.
@@ -197,19 +200,19 @@
             </div>
           </div>
           <div class="portfolio-card">
-            <div class="visible">
+            <div class="portfolio-card__visible">
               <img
                 src="/img/portfolio-card-9.png"
                 alt="portfolio"
                 class="portfolio-img"
               />
-              <div class="portfolio-titles">
-                <h4 class="portfolio-card-title">Growing Business</h4>
-                <span class="portfolio-span">Додаток</span>
+              <div class="portfolio-card__titles">
+                <h4 class="portfolio-card__title">Growing Business</h4>
+                <span class="portfolio-card__span">Додаток</span>
               </div>
             </div>
-            <div class="overlay-text">
-              <p class="portfolio-text">
+            <div class="portfolio-card__overlay">
+              <p class="portfolio-card__text">
                 Ресурс пропонує комплексні пропозиції з різним рівнем
                 функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.
@@ -220,12 +223,12 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="footer-container">
-        <img src="/img/WebStudio (1).png" alt="logo" class="footer-logo" />
-        <ul class="footer-list">
-          <li class="adress">м. Київ, пр-т Лесі Українки, 26</li>
-          <li class="info-footer">info@devstudio.com</li>
-          <li class="info-footer">+38 096 111 11 11</li>
+      <div class="footer__container">
+        <img src="/img/WebStudio (1).png" alt="logo" class="footer__logo" />
+        <ul class="footer__list">
+          <li class="footer__adress">м. Київ, пр-т Лесі Українки, 26</li>
+          <li class="footer__info">info@devstudio.com</li>
+          <li class="footer__info">+38 096 111 11 11</li>
         </ul>
       </div>
     </footer>
