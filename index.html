@@ -1,220 +1,325 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="/src/css/main.css">
-</head>
-</head>
-<body>
+    <link rel="stylesheet" href="/src/css/main.css" />
+  </head>
+  <body>
     <header class="header">
-           <nav class="header__nav nav">
-            <div class="nav__logotup">
-                <a href="#"><img src="/img/webstudio.png" alt="WebStudio"></a>
-            </div>
-            <ul class="nav__list">
-                <li><a href="#">Студія</a></li>
-                <li><a href="portfolio.html">Портфоліо</a></li>
-                <li><a href="#">Контакти</a></li>
-            </ul>
-            <div class="nav__button">
-                <a class="nav__info" href="#">info@devstudio.com</a>
-                <a class="nav__nomber" href="#">+38 096 111 11 11</a>
-            </div>
-        </nav>   
-        <div class="header__registration registration-container">
-            <div class="registration registration-container__registration">
-               <h1 class="registration__title">
-                Ефективні рішення для вашого бізнесу
-            </h1>
-            <a href="#"><button class="registration__btn" data-modal-open>Замовити послугу</button></a>  
-            <div class="backdrop is-hidden" data-backdrop>
-                <div class="modal" data-modal>
-                    <div class="btn-close-container">
-                       <button class="button-close" data-modal-close><svg  xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <path class="img-fill" d="M15 5.10786L13.8921 4L9.5 8.39214L5.10786 4L4 5.10786L8.39214 9.5L4 13.8921L5.10786 15L9.5 10.6079L13.8921 15L15 13.8921L10.6079 9.5L15 5.10786Z" fill="#212121"/>
-                        </svg></button>  
-                    </div>
-                    <div class="modal-container">
-                    <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
-                    <form action="#"  class="form">
-                            <div class="form-box">
-                            <label class="form-label" for="name" class="form_label">Імя</label>
-                            <div class="form-container">
-                                <svg class="img-form" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                    <g clip-path="url(#clip0_1_5925)">
-                                    <path class="img-fill" d="M9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9ZM9 10.5C6.9975 10.5 3 11.505 3 13.5V14.25C3 14.6625 3.3375 15 3.75 15H14.25C14.6625 15 15 14.6625 15 14.25V13.5C15 11.505 11.0025 10.5 9 10.5Z" fill="#212121"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_1_5925">
-                                    <rect width="18" height="18" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                                <input class="form-input" type="text" name="user_name" id="name">
-                            </div>
-                            </div>
-                        <div class="form-box">
-                             <label class="form-label" for="phone" class="form_label">Телефон</label>
-                            <div class="form-container">
-                                <svg class="img-form" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                    <g clip-path="url(#clip0_1_5931)">
-                                      <path class="img-fill" d="M13.996 11.1226L12.1579 10.9127C11.7164 10.8621 11.2822 11.0141 10.971 11.3252L9.63945 12.6568C7.59144 11.6147 5.91251 9.94301 4.87041 7.88775L6.20922 6.54894C6.5204 6.23775 6.67237 5.80355 6.62171 5.3621L6.41185 3.53842C6.325 2.8075 5.70988 2.2575 4.97173 2.2575H3.71976C2.902 2.2575 2.22175 2.93776 2.2724 3.75552C2.65595 9.93577 7.59868 14.8713 13.7717 15.2548C14.5894 15.3055 15.2697 14.6252 15.2697 13.8075V12.5555C15.2769 11.8246 14.7269 11.2095 13.996 11.1226Z" fill="#212121"/>
-                                    </g>
-                                    <defs>
-                                      <clipPath id="clip0_1_5931">
-                                        <rect width="18" height="18" fill="white"/>
-                                      </clipPath>
-                                    </defs>
-                                  </svg>
-                                <input class="form-input" type="tel" name="user_phone" id="phone">
-                            </div> 
-                        </div>
-                        <div class="form-box">
-                           <label class="form-label" for="imail" class="form_label">Почта</label>
-                            <div class="form-container">
-                                <svg class="img-form" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                    <g clip-path="url(#clip0_1_5936)">
-                                      <path class="img-fill" d="M15 3H3C2.175 3 1.5075 3.675 1.5075 4.5L1.5 13.5C1.5 14.325 2.175 15 3 15H15C15.825 15 16.5 14.325 16.5 13.5V4.5C16.5 3.675 15.825 3 15 3ZM14.7 6.1875L9.3975 9.5025C9.1575 9.6525 8.8425 9.6525 8.6025 9.5025L3.3 6.1875C3.1125 6.0675 3 5.865 3 5.6475C3 5.145 3.5475 4.845 3.975 5.1075L9 8.25L14.025 5.1075C14.4525 4.845 15 5.145 15 5.6475C15 5.865 14.8875 6.0675 14.7 6.1875Z" fill="#212121"/>
-                                    </g>
-                                    <defs>
-                                      <clipPath id="clip0_1_5936">
-                                        <rect width="18" height="18" fill="white"/>
-                                      </clipPath>
-                                    </defs>
-                                  </svg>
-                                <input class="form-input" type="email" name="user_imail" id="imail">
-                            </div>
-                        </div>
-                        <div class="form-box box-textarea">
-                            <label class="form-label" for="comment" class="form_label">Коментар</label>
-                            <textarea class="form-textarea" placeholder="Введіть текст" name="user_comment" id="comment" cols="30" rows="7"></textarea>
-                        </div>
-                        <label class="form_label form-check"><input type="checkbox" name="user_check"><span class="input-check">Погоджуюся з розсилкою та приймаю </span><a class="link-check">Умови договору</a></label>
-                      </form>
-                      <button class="btn-form" type="submit">Відправити</button> 
-                    </div>
-                    </div>
-                </div>
-            </div>
-            </div>
+      <nav class="header__nav nav">
+        <div class="nav__logotup">
+          <a href="#"><img src="src/img/webstudio.png" alt="WebStudio" /></a>
         </div>
+        <ul class="nav__list">
+          <li><a href="#">Студія</a></li>
+          <li><a href="portfolio.html">Портфоліо</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+        <div class="nav__button">
+          <a class="nav__info" href="#">info@devstudio.com</a>
+          <a class="nav__nomber" href="#">+38 096 111 11 11</a>
+        </div>
+      </nav>
+      <div class="header__registration registration-container">
+        <div class="registration registration-container__registration">
+          <h1 class="registration__title">
+            Ефективні рішення для вашого бізнесу
+          </h1>
+          <button class="registration__btn" data-modal-open>
+            <a href="#">Замовити послугу</a>
+          </button>
+          <div class="registration__backdrop backdrop is-hidden" data-backdrop>
+            <div class="registration__modal modal" data-modal>
+              <div class="modal__btn-close-container">
+                <button class="modal__button-close" data-modal-close>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                  >
+                    <path
+                      class="img-fill"
+                      d="M15 5.10786L13.8921 4L9.5 8.39214L5.10786 4L4 5.10786L8.39214 9.5L4 13.8921L5.10786 15L9.5 10.6079L13.8921 15L15 13.8921L10.6079 9.5L15 5.10786Z"
+                      fill="#212121"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="modal__container">
+                <h3 class="modal__title">
+                  Залиште свої дані, ми вам передзвонимо
+                </h3>
+                <form action="#" class="form modal__form">
+                  <div class="form__box">
+                    <label class="form__label" for="name">Імя</label>
+                    <div class="form__container">
+                      <svg
+                        class="form__img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_1_5925)">
+                          <path
+                            class="img-fill"
+                            d="M9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9ZM9 10.5C6.9975 10.5 3 11.505 3 13.5V14.25C3 14.6625 3.3375 15 3.75 15H14.25C14.6625 15 15 14.6625 15 14.25V13.5C15 11.505 11.0025 10.5 9 10.5Z"
+                            fill="#212121"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1_5925">
+                            <rect width="18" height="18" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <input
+                        class="form__input"
+                        type="text"
+                        name="user_name"
+                        id="name"
+                      />
+                    </div>
+                  </div>
+                  <div class="form__box">
+                    <label class="form__label" for="phone">Телефон</label>
+                    <div class="form__container">
+                      <svg
+                        class="form__img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_1_5931)">
+                          <path
+                            class="img-fill"
+                            d="M13.996 11.1226L12.1579 10.9127C11.7164 10.8621 11.2822 11.0141 10.971 11.3252L9.63945 12.6568C7.59144 11.6147 5.91251 9.94301 4.87041 7.88775L6.20922 6.54894C6.5204 6.23775 6.67237 5.80355 6.62171 5.3621L6.41185 3.53842C6.325 2.8075 5.70988 2.2575 4.97173 2.2575H3.71976C2.902 2.2575 2.22175 2.93776 2.2724 3.75552C2.65595 9.93577 7.59868 14.8713 13.7717 15.2548C14.5894 15.3055 15.2697 14.6252 15.2697 13.8075V12.5555C15.2769 11.8246 14.7269 11.2095 13.996 11.1226Z"
+                            fill="#212121"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1_5931">
+                            <rect width="18" height="18" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <input
+                        class="form__input"
+                        type="tel"
+                        name="user_phone"
+                        id="phone"
+                      />
+                    </div>
+                  </div>
+                  <div class="form__box">
+                    <label class="form__label" for="imail">Почта</label>
+                    <div class="form__container">
+                      <svg
+                        class="form__img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_1_5936)">
+                          <path
+                            class="img-fill"
+                            d="M15 3H3C2.175 3 1.5075 3.675 1.5075 4.5L1.5 13.5C1.5 14.325 2.175 15 3 15H15C15.825 15 16.5 14.325 16.5 13.5V4.5C16.5 3.675 15.825 3 15 3ZM14.7 6.1875L9.3975 9.5025C9.1575 9.6525 8.8425 9.6525 8.6025 9.5025L3.3 6.1875C3.1125 6.0675 3 5.865 3 5.6475C3 5.145 3.5475 4.845 3.975 5.1075L9 8.25L14.025 5.1075C14.4525 4.845 15 5.145 15 5.6475C15 5.865 14.8875 6.0675 14.7 6.1875Z"
+                            fill="#212121"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1_5936">
+                            <rect width="18" height="18" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <input
+                        class="form__input"
+                        type="email"
+                        name="user_imail"
+                        id="imail"
+                      />
+                    </div>
+                  </div>
+                  <div class="form__box box-textarea">
+                    <label class="form__label" for="comment">Коментар</label>
+                    <textarea
+                      class="form__textarea"
+                      placeholder="Введіть текст"
+                      name="user_comment"
+                      id="comment"
+                      cols="30"
+                      rows="7"
+                    ></textarea>
+                  </div>
+                  <label class="form__labell form__check"
+                    ><input type="checkbox" name="user_check" /><span
+                      class="fotm__input-check"
+                      >Погоджуюся з розсилкою та приймаю </span
+                    ><a class="form__link-check">Умови договору</a></label
+                  >
+                </form>
+                <button class="form__btn" type="submit">Відправити</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- я не трогала модальне вікно, бо промучалася з ним півтора тижня и якщо щось полетить то я це не виправлю -->
     <main class="main">
-    <div class="main__container main-container">
-       <section class="main-container__section-1 section-1">
-        <div class="section-1__container">
+      <div class="main__container main-container">
+        <section class="main-container__section-1 section-1">
+          <div class="section-1__container">
             <div class="section-1__card card">
-                <div class="box-svg">
-                  <svg class="advantages-photo">
-                    <use href="/icons.svg#antenna"></use>
-                  </svg> 
-                </div>
-                <h3 class="card__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                <p class="card__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-             </div>
-             <div class="section-1__card card">
-            <div class="box-svg">
+              <div class="box-svg">
                 <svg class="advantages-photo">
-                    <use href="/icons.svg#clock"></use>
+                  <use href="/icons.svg#antenna"></use>
                 </svg>
+              </div>
+              <h3 class="card__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="card__text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
             </div>
-                <h3 class="card__title">ПУНКТУАЛЬНІСТЬ</h3>
-                <p class="card__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-             </div>
-             <div class="section-1__card card">
-                <div class="box-svg">
+            <div class="section-1__card card">
+              <div class="box-svg">
                 <svg class="advantages-photo">
-                    <use class="icon-advantages" href="/icons.svg#laptop"></use>
+                  <use href="/icons.svg#clock"></use>
                 </svg>
-                </div>
-                <h3 class="card__title">ПЛАНУВАННЯ</h3>
-                <p class="card__text">Так само консультація з широким активом значною мірою зумовлює.</p>
-             </div>
-             <div class="section-1__card card">
-                <div class="box-svg">
+              </div>
+              <h3 class="card__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="card__text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </div>
+            <div class="section-1__card card">
+              <div class="box-svg">
                 <svg class="advantages-photo">
-                    <use href="/icons.svg#cosmos"></use>
+                  <use class="icon-advantages" href="/icons.svg#laptop"></use>
                 </svg>
-                </div>
-                <h3 class="card__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                <p class="card__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-             </div>
-        </div>
-       </section>
-       <section class="main-container__section-2 section-2">
-        <h2 class="section-2__title">Чим ми займаємося</h2>
-        <div class="section-2__container">
+              </div>
+              <h3 class="card__title">ПЛАНУВАННЯ</h3>
+              <p class="card__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </div>
+            <div class="section-1__card card">
+              <div class="box-svg">
+                <svg class="advantages-photo">
+                  <use href="/icons.svg#cosmos"></use>
+                </svg>
+              </div>
+              <h3 class="card__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="card__text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="main-container__section-2 section-2">
+          <h2 class="section-2__title">Чим ми займаємося</h2>
+          <div class="section-2__container">
             <div class="section-2__photo2 photo2">
-                <img class="photo2__photo" src="/img/img.png" alt="програмування">
-                <h4 class="photo2__title">Десктопні додатки</h4>
+              <img
+                class="photo2__photo"
+                src="/src/img/img.png"
+                alt="програмування"
+              />
+              <h4 class="photo2__title">Десктопні додатки</h4>
             </div>
             <div class="section-2__photo2 photo2">
-                <img class="photo2__photo" src="/img/img1.png" alt="маркетинг">
-                <h4 class="photo2__title">Мобільні додатки</h4>
+              <img
+                class="photo2__photo"
+                src="/src/img/img1.png"
+                alt="маркетинг"
+              />
+              <h4 class="photo2__title">Мобільні додатки</h4>
             </div>
             <div class="section-2__photo2 photo2">
-                <img class="photo2__photo" src="/img/img2.png" alt="дизайн">
-                <h4 class="photo2__title">Дизайнерські рішення</h4>
+              <img class="photo2__photo" src="/src/img/img2.png" alt="дизайн" />
+              <h4 class="photo2__title">Дизайнерські рішення</h4>
             </div>
-        </div>
-       </section>
-        </div>
-       </section>
-    </div>
-    <section class="main-container__our-company our-company">
+          </div>
+        </section>
+      </div>
+      <section class="main-container__our-company our-company">
         <div class="our-company__container">
-            <h3 class="our-company__team">Наша команда</h3>
-            <div class="our-company__our-team">
-                <div class="people-card">
-                    <img class="people-card__img" src="/img/people1.jpg" alt="people">
-                    <div class="people">
-                      <h5 class="people__title">Ігор Дем'яненко</h5>
-                      <span class="people__job">Product Designer</span>
-                    </div>
-                </div>
-                <div class="people-card">
-                    <img class="people-card__img" src="/img/people2.jpg" alt="people">
-                    <div class="people">
-                        <h5 class="people__title">Ольга Рєпіна</h5>
-                        <span class="people__job">Frontend Developer</span>
-                    </div>
-                </div>
-                <div class="people-card">
-                    <img class="people-card__img" src="/img/people3.jpg" alt="people">
-                    <div class="people">
-                        <h5 class="people__title">Микола Тарасов</h5>
-                        <span class="people__job">Marketing</span>
-                    </div>
-                </div>
-                <div class="people-card">
-                    <img class="people-card__img" src="/img/people4.jpg" alt="people">
-                    <div class="people">
-                       <h5 class="people__title">Михайло Єрмаков</h5>
-                       <span class="people__job">UI Designer</span> 
-                    </div>
-                </div>
+          <h3 class="our-company__team">Наша команда</h3>
+          <div class="our-company__our-team">
+            <div class="people-card">
+              <img
+                class="people-card__img"
+                src="/src/img/people1.jpg"
+                alt="people"
+              />
+              <div class="people">
+                <h5 class="people__title">Ігор Дем'яненко</h5>
+                <span class="people__job">Product Designer</span>
+              </div>
             </div>
+            <div class="people-card">
+              <img
+                class="people-card__img"
+                src="/src/img/people2.jpg"
+                alt="people"
+              />
+              <div class="people">
+                <h5 class="people__title">Ольга Рєпіна</h5>
+                <span class="people__job">Frontend Developer</span>
+              </div>
+            </div>
+            <div class="people-card">
+              <img
+                class="people-card__img"
+                src="/src/img/people3.jpg"
+                alt="people"
+              />
+              <div class="people">
+                <h5 class="people__title">Микола Тарасов</h5>
+                <span class="people__job">Marketing</span>
+              </div>
+            </div>
+            <div class="people-card">
+              <img
+                class="people-card__img"
+                src="/src/img/people4.jpg"
+                alt="people"
+              />
+              <div class="people">
+                <h5 class="people__title">Михайло Єрмаков</h5>
+                <span class="people__job">UI Designer</span>
+              </div>
+            </div>
+          </div>
         </div>
-       </section>
+      </section>
     </main>
     <footer class="footer">
-        <div class="footer__container">
-            <img src="/img/webstudio1.png" alt="logo" class="footer__logo">
-            <ul class="footer__list">
-                <li class="footer__adress">м. Київ, пр-т Лесі Українки, 26</li>
-                <li class="footer__info">info@devstudio.com</li>
-                <li class="footer__info">+38 096 111 11 11</li>
-            </ul>
-        </div>
+      <div class="footer__container">
+        <img src="/src/img/webstudio1.png" alt="logo" class="footer__logo" />
+        <ul class="footer__list">
+          <li class="footer__adress">м. Київ, пр-т Лесі Українки, 26</li>
+          <li class="footer__info">info@devstudio.com</li>
+          <li class="footer__info">+38 096 111 11 11</li>
+        </ul>
+      </div>
     </footer>
-</div>
-<script src="modal.js"></script>
-</body>
+    <script src="modal.js"></script>
+  </body>
 </html>
